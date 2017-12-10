@@ -23,6 +23,10 @@ extern void run_art(int argc, char **argv);
 extern void run_super(int argc, char **argv);
 extern void run_lsd(int argc, char **argv);
 
+void run_go_main(int argc, char **argv) {
+    run_go(argc, argv);
+}
+
 void average(int argc, char *argv[])
 {
     char *cfgfile = argv[2];
@@ -382,7 +386,7 @@ void visualize(char *cfgfile, char *weightfile)
 #endif
 }
 
-int main(int argc, char **argv)
+int main2(int argc, char **argv)
 {
     //test_resize("data/bad.jpg");
     //test_box();

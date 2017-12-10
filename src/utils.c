@@ -30,6 +30,10 @@ double what_time_is_it_now()
     return now.tv_sec + now.tv_nsec*1e-9;
 }
 
+double get_three() {
+    return 3.0;
+}
+
 int *read_intlist(char *gpu_list, int *ngpus, int d)
 {
     int *gpus = 0;

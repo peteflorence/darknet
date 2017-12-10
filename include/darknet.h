@@ -618,6 +618,7 @@ float train_networks(network **nets, int n, data d, int interval);
 void sync_nets(network **nets, int n, int interval);
 void harmless_update_network_gpu(network *net);
 #endif
+
 void save_image_png(image im, const char *name);
 void get_next_batch(data d, int n, int offset, float *X, float *y);
 void grayscale_image_3c(image im);
@@ -693,7 +694,10 @@ void random_distort_image(image im, float hue, float saturation, float exposure)
 void fill_image(image m, float s);
 image grayscale_image(image im);
 void rotate_image_cw(image im, int times);
+void run_go_main(int argc, char **argv);
 double what_time_is_it_now();
+double get_three();
+void run_go(int argc, char ** argv);
 image rotate_image(image m, float rad);
 void visualize_network(network *net);
 float box_iou(box a, box b);
